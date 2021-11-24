@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">COMP3606_Assingnment2</string>
+    <string name="update">Update Stocks</string>
+    <string-array name="options">
+        <item>Receiving Stocks</item>
+        <item>Update Stocks</item>
+    </string-array>
+</resources>
