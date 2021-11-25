@@ -4,5 +4,6 @@
     <string-array name="options">
         <item>Receiving Stocks</item>
         <item>Update Stocks</item>
+
     </string-array>
 </resources>
