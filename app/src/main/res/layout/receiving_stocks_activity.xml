@@ -6,35 +6,76 @@
     tools:context=".ReceivingStocks">
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
-
         android:layout_weight="1" />
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/spinner"
-        android:layout_alignCenter="@id/spinner"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="100dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="number" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextNumber"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="-2dp"
         android:layout_weight="1"
         android:text="@string/update" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/names"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="108dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addbtn"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/stockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameView"
+        android:text="Stock on Hand" />
+
+    <TextView
+        android:id="@+id/intransitView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stockView"
+        android:text="Intransit " />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intransitView"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/preorder_qtyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceView"
+        android:text="Preorder Quantity" />
+
+    <TextView
+        android:id="@+id/preorder_amtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preorder_qtyView"
+        android:text="Preorder Amount" />
+
 </RelativeLayout>
